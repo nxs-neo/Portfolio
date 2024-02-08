@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baumans", system-ui;
+    font-weight: bolder;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #221f26;
+}   
+
+header {
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding: 2em 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .name {
+    color: #221f26;
+    text-decoration: none;
+    font-size: 3em;
+    border-radius: 20em;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    List-style: none;
+    margin-Left: 1.5em;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    color: #221f26;
+    border-radius: 20em;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background-color: #d8c4f1;
+    color: #2b1055;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#bg {
+    z-index: 0;
+}
+
+#one {
+    z-index: 1;
+}
+
+#two{
+    z-index: 2;
+}
+
+#three{
+    z-index: 3;
+}
+
+#four{
+    z-index: 4;
+}
+
+#five{
+    z-index: 5;
+}
+
+#scroll_txt {
+    align-self: center;
+    color: #d8c4f1cf;
+    text-shadow: 1em 1em 1em 1em #221f26;
+
+    font-size: 7.5em;
+    z-index: 9;
+   
+}
+
+.sec{ 
+    position: relative;
+    padding: 5em;
+    background: #24182C;
+}
+.sec h2 {
+    font-size: 5em;
+    margin-bottom: 0.25em;
+    text-align: center;
+    color: #d8c4f1;
+}
+.sec p {
+    font-size: 2em;
+    color:#d8c4f1;
+    text-align: justify;
+    text-wrap:pretty;
+}
