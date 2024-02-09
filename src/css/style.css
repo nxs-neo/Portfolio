@@ -19,19 +19,30 @@ header {
     top: 0;
     Left: 0;
     width: 100%;
-    padding: 2em 4em;
+    padding: 1em 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10000;
+    z-index: 100;
 }
 
-header .name {
-    color: #221f26;
+.name {
+    color: #d8c4f1;
     text-decoration: none;
     font-size: 3em;
-    border-radius: 20em;
+    border-radius: 10em;
+    background-color: #221f26;
+    border: 0.1em solid #d8c4f1;
+    padding: 0.25em 0.5em;
+}
 
+.name:hover{
+    transition: all 0.2s ease-in-out;
+    color: #d8c4f1;
+    background-color: #d8c4f1;
+    color: #221f26;
+    border: 0.1em solid #221f26;
+    padding: 0.25em 0.5em;
 }
 
 header ul {
@@ -43,18 +54,28 @@ header ul {
 header ul li {
     List-style: none;
     margin-Left: 1.5em;
+    filter: brightness(0.9);
+}
+
+header ul li.active,
+header ul li:hover {
+    filter: brightness(1);
+    transform: scale(1.1);
 }
 
 header ul li a {
     text-decoration: none;
     padding: 0.5em 1em;
-    color: #221f26;
-    border-radius: 20em;
+    color: #d8c4f1;
+    background-color: #221f26;
+    border: 0.2em solid #d8c4f1;
+    border-radius: 10em;
 }
 
 header ul li a:hover,
 header ul li a.active {
     background-color: #d8c4f1;
+    border: 0.2em solid #221f26;
     color: #2b1055;
 }
 
@@ -78,6 +99,7 @@ section img {
     justify-content: center;
     align-items: center;
 }
+
 
 
 #bg {
@@ -108,26 +130,26 @@ section img {
     align-self: center;
     color: #d8c4f1cf;
     text-shadow: 1em 1em 1em 1em #221f26;
-
+-webkit-text-stroke: 0.05em #221f26bb;
     font-size: 7.5em;
     z-index: 9;
    
 }
 
-.sec{ 
+.section{ 
     position: relative;
     padding: 5em;
     background: #24182C;
 }
-.sec h2 {
+.section h1,h2,h3 {
     font-size: 5em;
     margin-bottom: 0.25em;
     text-align: center;
     color: #d8c4f1;
 }
-.sec p {
+.section p {
     font-size: 2em;
     color:#d8c4f1;
-    text-align: justify;
+    text-align: center;
     text-wrap:pretty;
 }

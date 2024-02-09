@@ -1,0 +1,41 @@
+#grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 2em;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+  
+a {
+    text-decoration: none;
+}
+
+.icon {
+    color: white;
+    font-size: 10em;
+}
+
+
+.tile {
+    width: 100%em;
+    height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10em;
+    filter: brightness(0.9);
+    
+  }
+
+.scale {
+    transition: all 0.2s ease-in-out;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    filter: brightness(1);
+}

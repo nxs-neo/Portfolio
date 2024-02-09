@@ -3,6 +3,8 @@
     <head>
         <title>Neo's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+        <link rel="stylesheet" href="/src/css/contact.css">
+        <script src="https://kit.fontawesome.com/a68d1360f7.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -14,7 +16,7 @@
                 <li><a href="contact.html" class="active">Contact</a></li> 
             </ul>
         </header>
-        <section class="sec">
+        <section class="section">
             <img src="/src/img/bg.png" id="bg">
             <img src="/src/img/1.png" id="one">
             <img src="/src/img/2.png" id="two">
@@ -23,9 +25,31 @@
             <img src="/src/img/5.png" id="five">
             <h3 id="scroll_txt">Scroll Down</h3>
         </section>
-        <div class="sec">
+        <div class="section">
             <h2>Contact</h2>
-            <p> </p>
+            <div class="section" id="section">
+                <div id="grid">
+                    <a href="https://www.instagram.com/chacko.chen/" target="_blank">
+                        <span class="tile scale" style="background-image: linear-gradient(to bottom right,#5501E7, #FF1F26, yellow);">
+                            <i class="fa-brands fa-instagram icon"></i>
+                        </span>
+                    </a>
+                    <a href="https://github.com/nxs-neo" target="_blank">
+                        <span class="tile scale" style="background-color: #0D1017;">
+                            <i class="fa-brands fa-github icon"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rony-chacko-3173b7287" target="_blank">
+                        <span class="tile white-color scale" style="background-color: #2867b2;">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                        </span>
+                    </a>
+                    <a href="https://steamcommunity.com/id/nxs_n30" target="_blank">
+                        <span class="tile scale" style="background-color: #19263B;">
+                            <i class="fa-brands fa-steam icon"></i>
+                        </span>
+                    </a>
+
         </div>
         <script>
             let one = document.getElementById("one");
@@ -37,16 +61,13 @@
             let header = document.querySelector('header')
                 window.addEventListener('scroll', function(){
                     let y = window.scrollY;
-                    let minY = window.screenY * -1;
                     scroll_txt.style.marginBottom = y * 0.02 + 'em';
-                    one.style.marginTop = y * .3 + 'em';
-                    two.style.marginTop = y * 0.1 + 'em';
-                    three.style.marginLeft = y * 0.3 + 'em'
-                    four.style.marginTop = y * 0.4 + 'em';
-                    five.style.marginLeft = y * 0.2 + 'em';
+                    one.style.marginTop = y * 0.3 + 'em';
+                    two.style.marginLeft = y * -0.5 + 'em';
+                    three.style.marginLeft = y * 0.35 + 'em'
+                    four.style.marginLeft = y * -0.4 + 'em';
+                    five.style.marginLeft = y * 0.5 + 'em';
                     header.style.top = y * 0.01 + 'em';
-
-
                 }
             )
         </script>
