@@ -27,8 +27,7 @@ a {
     justify-content: center;
     border-radius: 1.5em;
     filter: brightness(0.9);
-    
-  }
+}
 
 .scale {
     transition: all 0.2s ease-in-out;
