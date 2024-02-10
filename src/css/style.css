@@ -127,26 +127,25 @@ section img {
 
 #scroll_txt {
     align-self: center;
-    color: #d8c4f1cf;
-    text-shadow: 1em 1em 1em 1em #221f26;
--webkit-text-stroke: 0.05em #221f26bb;
+    color: #d8c4f1;
+-webkit-text-stroke: 0.05em #221f26;
     font-size: 7.5em;
     z-index: 9;
    
 }
 
-.section{ 
+.desc{ 
     position: relative;
     padding: 5em;
     background: #24182C;
 }
-.section h1,h2,h3 {
+.desc h1, h2, h3, h4, h5, h6{
     font-size: 5em;
     margin-bottom: 0.25em;
     text-align: center;
     color: #d8c4f1;
 }
-.section p {
+.desc p {
     font-size: 2em;
     color:#d8c4f1;
     text-align: center;
