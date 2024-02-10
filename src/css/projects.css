@@ -2,70 +2,53 @@ a {
     text-decoration: none;
 }
 
-.icon {
-    color: white;
-    font-size: 10em;
-}
-
-
-.tile {
-    width: 100%em;
-    height: 15em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1.5em;
-    filter: brightness(0.9);
-}
-
-.scale {
-    transition: all 0.2s ease-in-out;
-}
-
-.scale:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    filter: brightness(1);
-}
-
-.project-container {
+.project-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    }
-    
-    .project {
-        margin: 10px;
-        display: flex;
-        width: 100%;
-        max-height: 50em;
-        border-radius: 1.5em;
-        justify-content: center;
-        align-items: center;
-        border: 0.25em solid #d8c4f1;
-        padding: 1em;
-    }
-    
-    .project img {
-        max-width: 100%;
-        max-height: 100%;
-        height: auto;
-        border-radius: 1.5em;
-        border: 0.25em solid #d8c4f1;
-    }
-    
-    .project-info {
-        margin-top: 15px;
-        min-width: 45%;
-        padding: 1em;
-        border-radius: 1.5em;
-        flex: 1;
-    }
-    
-    .project-info h1, h2, h3, h4, h5, h6{
-        margin: 0;
-    }
-    
-    .project-info p {
-        margin: 0 0 0;
-    }
+}
+ 
+.project {
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    max-height: 50em;
+    border-radius: 1.5em;
+    justify-content: center;
+    align-items: center;
+    border: 0.4em solid #d8c4f1;
+    padding: 2.5em;
+    transition: all 0.2s ease-in-out;
+    color: #d8c4f1;
+}
+
+.project img{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 1.5em;
+    border: 0.4em solid #d8c4f1;
+}
+
+.project:hover{
+    transform: scale(1.05);
+    background-color: #d8c4f1;
+    border: 0.4em solid purple;
+}
+
+.project:hover .project-info p, .project:hover .project-info h5{
+    color: #221f26;
+}
+
+.project:hover img{
+    border: 0.4em solid purple;
+}
+
+
+
+.project-info {
+    margin-top: 15px;
+    min-width: 45%;
+    padding: 1em;
+    border-radius: 1.5em;
+}

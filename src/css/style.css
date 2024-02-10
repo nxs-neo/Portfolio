@@ -55,11 +55,12 @@ header ul li {
     List-style: none;
     margin-Left: 1.5em;
     filter: brightness(0.9);
+    transition: all 0.2s ease-in-out;
 }
 
 header ul li:hover {
     filter: brightness(1);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 header ul li a {
