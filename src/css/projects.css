@@ -1,4 +1,4 @@
-a {
+a{
     text-decoration: none;
 }
 
@@ -8,7 +8,7 @@ a {
     flex-wrap: wrap;
 }
  
-.project {
+.project{
     margin: 10px;
     display: flex;
     width: 100%;
@@ -16,6 +16,7 @@ a {
     border-radius: 1.5em;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     border: 0.4em solid #d8c4f1;
     padding: 2.5em;
     transition: all 0.2s ease-in-out;
@@ -36,6 +37,10 @@ a {
     border: 0.4em solid purple;
 }
 
+.project:hover .link_btn{
+    filter: opacity(1);
+}
+
 .project:hover .project-info p, .project:hover .project-info h5{
     color: #221f26;
 }
@@ -44,11 +49,32 @@ a {
     border: 0.4em solid purple;
 }
 
-
-
-.project-info {
+.project-info{
     margin-top: 15px;
     min-width: 45%;
     padding: 1em;
     border-radius: 1.5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
+
+.link_btn{
+    text-decoration: none;
+    padding: 0.25em .5em;
+    margin: 1em;
+    color: #d8c4f1;
+    background-color: #28112C;
+    border: 0.2em solid purple;
+    border-radius: 10em;
+    filter: opacity(0);
+    font-size: 2.5em;
+    transition: all 0.4s ease-in-out;
+}
+
+.link_btn:hover{
+    transform: scale(1.2);
+}
+
+

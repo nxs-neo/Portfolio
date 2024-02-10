@@ -27,6 +27,7 @@ a {
     border-radius: 1.5em;
     filter: brightness(0.9);
     transition: all 0.2s ease-in-out;
+    border: 0.3em solid #ffffffcf ;
 }
 
 .tile:hover {
