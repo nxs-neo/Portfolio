@@ -15,7 +15,7 @@
                 <li><a href="contact.html">Contact</a></li> 
             </ul>
         </header>
-        <section class="section">
+        <section class="desc">
             <img src="/src/img/bg.png" id="bg">
             <img src="/src/img/1.png" id="one">
             <img src="/src/img/2.png" id="two">
@@ -24,10 +24,33 @@
             <img src="/src/img/5.png" id="five">
             <h3 id="scroll_txt">PROJECTS</h3>
         </section>
-        <div class="section">
+        <div class="desc">
             <h2>Projects</h2>
-            <p> </p>
+            <div class="project-container">
+                <div class="project">
+                  <a href="https://github.com/nxs-neo/Arch-Update-Script"><img src="/src/img/archUpdate.png"></a>
+                    <div class="project-info">
+                        <h4>Arch Update Script</h4>
+                        <p>simple shell script to update Pacman, Flatpak and AUR packages for Arch Based Distros.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-info">
+                          <h3>Calculon</h3>
+                              <p>A basic calculator app built using Kotlin and XML</p>
+                    </div>
+                    <img src="/src/img/calculon.jpeg" style="height: 48em;">
+                </div>
+                <div class="project">
+                    <a href="https://github.com/nxs-neo/fakebook"><img src="/src/img/fakebook.png"></a>
+                    <div class="project-info">
+                        <h3>FakeBook</h3>
+                            <p>A clone of the facebook login page made for a workshop using HTML and CSS. </p>
+                    </div>
+                </div>
+              </div>
         </div>
+        <!-- Getting the Pics from web links causes the load times to be noticeably long -->
         <script>
             let one = document.getElementById("one");
             let two = document.getElementById("two");
