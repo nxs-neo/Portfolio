@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Neo's Portfolio</title>
+        <link rel="stylesheet" href="/docs/css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <a href="/docs/html/index.html" class="name">NEO</a>
+            <ul>
+                <li><a href="/docs/html/index.html" class="active">Home</a></li>
+                <li><a href="/docs/html/about.html">About</a></li>
+                <li><a href="/docs/html/projects.html">Projects</a></li>
+                <li><a href="/docs/html/contact.html">Contact</a></li> 
+            </ul>
+        </header>
+        <section class="desc">
+            <img src="/docs/img/bg.png" id="bg">
+            <img src="/docs/img/1.png" id="one">
+            <img src="/docs/img/2.png" id="two">
+            <img src="/docs/img/3.png" id="three">
+            <img src="/docs/img/4.png" id="four">
+            <img src="/docs/img/5.png" id="five">
+            <h3 id="scroll_txt">HOME</h3>
+        </section>
+        <div class="desc">
+            <h2>HOME</h2>
+            <p>&bull; Hello and welcome to my developer portfolio! My name is Rony Chacko Binu, but I like to be called Neo.</p>
+            <p>&bull; I am a S2 computer science engineering student at Providence College of engineering, Chengannur. </p>
+            <p>&bull; I am deeply passionate about Linux and Open Source software. (I use Arch (Btw)) </p>
+        </div>
+        <script>
+            let one = document.getElementById("one");
+            let two = document.getElementById("two");
+            let three = document.getElementById("three");
+            let four = document.getElementById("four");
+            let five = document.getElementById("five");
+            let scroll_txt = document.getElementById('scroll_txt');
+            let header = document.querySelector('header')
+                window.addEventListener('scroll', function(){
+                    let y = window.scrollY;
+                    scroll_txt.style.marginBottom = y * 0.02 + 'em';
+                    one.style.marginTop = y * 0.3 + 'em';
+                    two.style.marginLeft = y * -0.5 + 'em';
+                    three.style.marginLeft = y * 0.35 + 'em'
+                    four.style.marginLeft = y * -0.4 + 'em';
+                    five.style.marginLeft = y * 0.5 + 'em';
+                    header.style.top = y * 0.01 + 'em';
+                }
+            )
+        </script>
+    </body>
+</html>
